@@ -9,7 +9,7 @@ import UserIcon from "@heroicons/react/solid/UserIcon"
 import CurrencyDollarIcon from "@heroicons/react/solid/CurrencyDollarIcon"
 
 function WhyUs() {
-  return <div className='container mx-auto my-32'>
+  return <section className='container mx-auto my-32'>
     <SectionTitle>لماذا نفذلي؟</SectionTitle>
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-24">
       <div className="text-green-500">
@@ -31,7 +31,7 @@ function WhyUs() {
         <Card Icon={CurrencyDollarIcon} title="نفذ مشاريعك بأقل تكلفة" subtitle="وظّف أفضل الخبرات حسبما يتناسب مع ميزانيتك."/>
       </div>
     </div>
-  </div>;
+  </section>;
 }
 
 function Card({Icon, title, subtitle}) {
