@@ -8,7 +8,7 @@ function StartNow() {
       </h4>
       <a
         href="https://"
-        className="font-medium border-2 bg-white text-blue-500 px-12 py-2"
+        className="font-medium border-2 bg-white text-blue-500 hover:shadow-xl px-12 py-2"
       >
         أبدأ الآن
       </a>
