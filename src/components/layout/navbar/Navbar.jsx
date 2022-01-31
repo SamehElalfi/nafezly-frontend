@@ -1,35 +1,40 @@
 import React from "react";
 import IconButton from "../../shared/iconButton/IconButton";
-import UserGroupIcon from "@heroicons/react/solid/UserGroupIcon";
-import MenuIcon from "@heroicons/react/solid/MenuIcon";
-import HomeIcon from "@heroicons/react/solid/HomeIcon";
-import ShoppingBagIcon from "@heroicons/react/solid/ShoppingBagIcon";
-import ArchiveIcon from "@heroicons/react/solid/ArchiveIcon";
-import GlobeAltIcon from "@heroicons/react/solid/GlobeAltIcon";
+import logo from "assets/images/logo2-01.svg"
+
+// Navbar icons
+import {FaBoxes} from 'react-icons/fa';
+import {FaRegImages} from 'react-icons/fa';
+import {FaSuitcase} from 'react-icons/fa';
+import {FaUsers} from 'react-icons/fa';
+import {FaBars} from 'react-icons/fa';
+
 
 function Navbar() {
   return (
-    <div className="flex flex-row justify-around items-center ">
-      <div className="text-blue-900 text-4xl font-bold">نفذلي</div>
+    <div className="container mx-auto flex flex-row justify-around items-center gap-1">
+      <a href="https://" title="Home Page"><img src={logo} alt="Home Page" className="w-28" /></a>
 
-      <div className="big-menu flex flex-row justify-evenly w-1/2 items-center gap-2 flex-nowrap">
-        <IconButton icon={GlobeAltIcon} width="w-6" name="الخدمات" />
-        <IconButton icon={ArchiveIcon} width="w-6" name="الاعمال" />
-        <IconButton icon={HomeIcon} width="w-6" name="المشاريع" />
-        <IconButton icon={ShoppingBagIcon} width="w-6" name="المنفذين" />
+      <div className="big-menu flex flex-row flex-nowrap justify-end lg:justify-evenly items-center w-1/2">
+        <div className="hidden lg:flex">
+          <IconButton icon={FaBoxes} iconWidth="w-6" name="الخدمات" />
+          <IconButton icon={FaRegImages} iconWidth="w-6" name="الاعمال" />
+          <IconButton icon={FaSuitcase} iconWidth="w-6" name="المشاريع" />
+          <IconButton icon={FaUsers} iconWidth="w-6" name="المنفذين" />
+        </div>
         <a
           href="https://"
-          className="whitespace-nowrap border-2 border-blue-500 rounded-md p-3 mt-2"
+          className="whitespace-nowrap border border-blue-500 rounded py-2 px-3"
         >
           دخول
         </a>
         <a
           href="https://"
-          className="whitespace-nowrap bg-blue-500 text-white p-4 rounded-md mt-2  "
+          className="whitespace-nowrap bg-blue-500 text-white rounded p-2 mx-2 hidden lg:flex"
         >
           تسجيل الدخول
         </a>
-        <IconButton icon={MenuIcon} width="w-6" />
+        <IconButton icon={FaBars} iconWidth="w-6" className="mx-2" />
       </div>
     </div>
   );
