@@ -46,22 +46,22 @@ function Footer() {
         <FooterComponent>
           <ComponentTitle title="تابعنا" />
           <div className="flex flex-row mx-8 sm:mx-0 xl:mx-8">
-            <SocialIcon>
+            <SocialIcon href="https://">
               <FaFacebookF className="text-blue-500" />
             </SocialIcon>
-            <SocialIcon>
+            <SocialIcon href="https://">
               <FaTwitter className="text-cyan-500" />
             </SocialIcon>
-            <SocialIcon>
+            <SocialIcon href="https://">
               <FaYoutube className="text-red-500" />
             </SocialIcon>
-            <SocialIcon>
+            <SocialIcon href="https://">
               <FaInstagram className="text-gray-500" />
             </SocialIcon>
-            <SocialIcon>
+            <SocialIcon href="https://">
               <FaLinkedinIn className="text-blue-500" />
             </SocialIcon>
-            <SocialIcon>
+            <SocialIcon href="https://">
               <FaTelegramPlane className="text-cyan-500" />
             </SocialIcon>
           </div>
@@ -145,11 +145,11 @@ function ArticleLink({ href, text }) {
   );
 }
 
-function SocialIcon({ children }) {
+function SocialIcon({ children, href }) {
   return (
-    <div className="flex justify-center items-center w-8 h-8 m-3 border border-gray-300 rounded-full">
+    <a className="flex justify-center items-center w-8 h-8 m-3 border border-gray-300 rounded-full" href={href}>
       {children}
-    </div>
+    </a>
   );
 }
 
