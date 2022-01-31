@@ -19,7 +19,7 @@ function Header() {
           type="text"
           name="title"
           placeholder="أدخل عنوان المشروع الذي تريد تنفيذه..."
-          className="w-full p-4 rounded text-black"
+          className="w-full p-4 rounded text-black outline-transparent focus:border-0"
           value={title}
           onChange={(e) => setTitle(e.target.value)}
         />
