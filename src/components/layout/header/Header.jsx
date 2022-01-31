@@ -23,7 +23,7 @@ function Header() {
           value={title}
           onChange={(e) => setTitle(e.target.value)}
         />
-        <Button>
+        <Button className="sm:absolute left-1 w-full sm:w-auto my-2 md:my-0">
           أضف مشروعك
           <PaperAirplaneIcon className="w-6 rotate-45 mx-3 md:mx-2" />
         </Button>
