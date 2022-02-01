@@ -44,13 +44,13 @@ function Navbar() {
   return (
     <nav className="container mx-auto">
       <div
-        className="flex flex-row justify-around items-center gap-1 fixed top-0 left-0 right-0 bg-white z-10 shadow"
+        className="fixed top-0 left-0 right-0 z-10 flex flex-row items-center justify-around gap-1 bg-white shadow"
         ref={navBarRef}
       >
         <a href="https://" title="Home Page">
           <img src={logo} alt="Home Page" className="w-28" />
         </a>
-        <div className="big-menu flex flex-row flex-nowrap justify-end lg:justify-evenly items-center">
+        <div className="big-menu flex flex-row flex-nowrap items-center justify-end lg:justify-evenly">
           <div className="hidden lg:flex">
             <IconButton icon={FaBoxes} iconWidth="w-6" name="الخدمات" />
             <IconButton icon={FaRegImages} iconWidth="w-6" name="الاعمال" />
@@ -59,13 +59,13 @@ function Navbar() {
           </div>
           <a
             href="https://"
-            className="whitespace-nowrap border border-blue-500 rounded py-2 px-3"
+            className="whitespace-nowrap rounded border border-blue-500 py-2 px-3"
           >
             دخول
           </a>
           <a
             href="https://"
-            className="whitespace-nowrap bg-blue-500 text-white rounded p-2 mx-2 hidden lg:flex"
+            className="mx-2 hidden whitespace-nowrap rounded bg-blue-500 p-2 text-white lg:flex"
           >
             تسجيل الدخول
           </a>

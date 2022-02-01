@@ -14,12 +14,12 @@ import PayoutsImage from "assets/images/payouts-min.png";
 
 function Footer() {
   return (
-    <footer className="container grid grid-cols-1 md:grid-cols-2 mx-auto">
+    <footer className="container mx-auto grid grid-cols-1 md:grid-cols-2">
       <div className="flex flex-col">
         <FooterComponent>
           <ComponentTitle title="تعلم" />
 
-          <div className="flex flex-col mx-8 sm:mx-0 xl:mx-8">
+          <div className="mx-8 flex flex-col sm:mx-0 xl:mx-8">
             <ArticleLink
               href="https://"
               text="أفضل إضافات وقوالب ووردبريس بكل تصنيفاتها - دليل شامل"
@@ -45,7 +45,7 @@ function Footer() {
 
         <FooterComponent>
           <ComponentTitle title="تابعنا" />
-          <div className="flex flex-row mx-8 sm:mx-0 xl:mx-8">
+          <div className="mx-8 flex flex-row sm:mx-0 xl:mx-8">
             <SocialIcon href="https://">
               <FaFacebookF className="text-blue-500" />
             </SocialIcon>
@@ -72,7 +72,7 @@ function Footer() {
         <div className="flex flex-col">
           <FooterComponent>
             <ComponentTitle title="روابط" />
-            <div className="flex flex-col mx-8 gap-2">
+            <div className="mx-8 flex flex-col gap-2">
               <a href="https://">الدليل الإرشادي</a>
               <a href="https://">الدعم الفني</a>
               <a href="https://">شروط الاستخدام </a>
@@ -106,11 +106,11 @@ function Footer() {
 
           <FooterComponent>
             <ComponentTitle title="مواقعنا" />
-            <a className="flex flex-col relative group" href="https://">
-              <div className="flex justify-center items-center p-4 rounded bg-blue-500 w-12">
-                <FaPenAlt className="text-white w-8" />
+            <a className="group relative flex flex-col" href="https://">
+              <div className="flex w-12 items-center justify-center rounded bg-blue-500 p-4">
+                <FaPenAlt className="w-8 text-white" />
               </div>
-              <span className="translate-x-1/4 w-fit my-2 p-2 rounded bg-black text-white text-sm opacity-0 group-hover:opacity-100 transition-all duration-500">
+              <span className="my-2 w-fit translate-x-1/4 rounded bg-black p-2 text-sm text-white opacity-0 transition-all duration-500 group-hover:opacity-100">
                 مدونة نفذلي
               </span>
             </a>
@@ -126,13 +126,13 @@ function FooterComponent({ children }) {
 }
 
 function ComponentTitle({ title }) {
-  return <h3 className="text-xl my-4 mx--6">{title}</h3>;
+  return <h3 className="my-4 mx--6 text-xl">{title}</h3>;
 }
 
 function ArticleLink({ href, text }) {
   return (
-    <div className="flex flex-row justify-start items-center">
-      <div className="bg-blue-500 border-2 border-green-500 w-4 h-4 rounded-full m-4"></div>
+    <div className="flex flex-row items-center justify-start">
+      <div className="m-4 h-4 w-4 rounded-full border-2 border-green-500 bg-blue-500"></div>
       <a
         href={href}
         target="_blank"
@@ -147,7 +147,10 @@ function ArticleLink({ href, text }) {
 
 function SocialIcon({ children, href }) {
   return (
-    <a className="flex justify-center items-center w-8 h-8 m-3 border border-gray-300 rounded-full" href={href}>
+    <a
+      className="m-3 flex h-8 w-8 items-center justify-center rounded-full border border-gray-300"
+      href={href}
+    >
       {children}
     </a>
   );

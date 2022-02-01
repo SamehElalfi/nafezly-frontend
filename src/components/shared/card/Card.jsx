@@ -3,13 +3,13 @@ import Button from "../button/Button";
 function Card(props) {
   const x = 54;
   return (
-    <div className="flex flex-col items-center w-1/4 group  h-48 bg-red-300">
-      <props.icon className="w-12 my-2" />
-      <h2 className="font-bold text-xl my-2">{props.title}</h2>
-      <p className="flex-wrap text-center group-hover:hidden transition-all duration-900 ">
+    <div className="group flex h-48 w-1/4 flex-col  items-center bg-red-300">
+      <props.icon className="my-2 w-12" />
+      <h2 className="my-2 text-xl font-bold">{props.title}</h2>
+      <p className="duration-900 flex-wrap text-center transition-all group-hover:hidden ">
         {props.text}
       </p>
-      <div className="opacity-0 group-hover:opacity-100 flex flex-row justify-between my-2 transition-all duration-900 ">
+      <div className="duration-900 my-2 flex flex-row justify-between opacity-0 transition-all group-hover:opacity-100 ">
         <Button className="ml-2">html</Button>
         <Button className="ml-2">css</Button>
         <Button className="">javascript</Button>

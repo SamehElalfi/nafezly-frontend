@@ -4,10 +4,10 @@ import SectionTitle from "components/shared/sectionTitle/SectionTitle";
 
 function Paragraph(props) {
   return (
-    <div className="flex flex-col my-12 mx-5">
+    <div className="my-12 mx-5 flex flex-col">
       <div className="flex flex-row">
-        <CheckCircleIcon className="w-6 ml-2 text-blue-500" />
-        <h2 className="font-bold text-2xl">{props.title}</h2>
+        <CheckCircleIcon className="ml-2 w-6 text-blue-500" />
+        <h2 className="text-2xl font-bold">{props.title}</h2>
       </div>
       <p className="pt-2">{props.paragraph}</p>
     </div>
@@ -18,7 +18,7 @@ function HowItWorks() {
   return (
     <div className=" container mx-auto overflow-hidden">
       <SectionTitle>كيف يعمل</SectionTitle>
-      <div className="flex flex-col-reverse lg:flex-row justify-center items-stretch">
+      <div className="flex flex-col-reverse items-stretch justify-center lg:flex-row">
         <div className="right-side h-100 w-full lg:w-1/2">
           <Paragraph
             title="أضف المشروع"
@@ -35,7 +35,7 @@ function HowItWorks() {
         </div>
         <div className="left-side h-96 w-full lg:w-1/2">
           <iframe
-            className="w-full h-full"
+            className="h-full w-full"
             title="new-one"
             src="https://www.youtube.com/embed/UBOj6rqRUME"
           ></iframe>

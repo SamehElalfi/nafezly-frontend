@@ -12,10 +12,10 @@ import Button from "components/shared/button/Button";
 function Sidebar() {
   return (
     <div>
-      <div className="layout bg-gray-700 bg-opacity-50 w-screen h-screen fixed top-0 right-0 z-30"></div>
-      <aside className="flex flex-col fixed top-0 left-0 h-full w-full sm:w-1/2 md:w-1/3 lg:w-1/4 lg:max-w-[300px] overflow-scroll py-4 px-2 bg-white z-30">
+      <div className="layout fixed top-0 right-0 z-30 h-screen w-screen bg-gray-700 bg-opacity-50"></div>
+      <aside className="fixed top-0 left-0 z-30 flex h-full w-full flex-col overflow-scroll bg-white py-4 px-2 sm:w-1/2 md:w-1/3 lg:w-1/4 lg:max-w-[300px]">
         <div className="my-4">
-          <AiFillCloseCircle className="w-8 h-8 text-gray-500 " />
+          <AiFillCloseCircle className="h-8 w-8 text-gray-500 " />
         </div>
         <Button className="w-full">
           <FaBars className="ml-6 -mr-6" /> <span>نشر مشروع جديد</span>

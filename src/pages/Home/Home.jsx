@@ -1,7 +1,28 @@
-import React from 'react';
+import React from "react";
+import Navbar from "components/layout/navbar/Navbar";
+import Header from "components/layout/header/Header";
+import HowItWorks from "components/layout/howItWorks/HowItWorks";
+import WhyUs from "components/layout/whyUs/WhyUs";
+import Faq from "components/layout/faq/Faq";
+import StartNow from "components/layout/startNow/StartNow";
+import Footer from "components/layout/footer/Footer";
+import CopyRight from "components/layout/copyRight/CopyRight";
+import Sidebar from "components/layout/sidebar/Sidebar";
 
 function Home() {
-  return <div></div>;
+  return (
+    <div>
+      <Navbar></Navbar>
+      <Header></Header>
+      <HowItWorks></HowItWorks>
+      <WhyUs></WhyUs>
+      <Faq></Faq>
+      <StartNow></StartNow>
+      <Footer></Footer>
+      <CopyRight></CopyRight>
+      {/* <Sidebar></Sidebar> */}
+    </div>
+  );
 }
 
 export default Home;

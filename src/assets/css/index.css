@@ -2,5 +2,5 @@
 @tailwind components;
 @tailwind utilities;
 :root {
-    direction: rtl;
+  direction: rtl;
 }

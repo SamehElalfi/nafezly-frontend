@@ -61,23 +61,23 @@ function Faq() {
 function Question({ title, children }) {
   const [isOpened, setIsOpened] = useState(false);
   return (
-    <div className="my-1 bg-gray-100 rounded-lg">
+    <div className="my-1 rounded-lg bg-gray-100">
       <div
-        className="flex flex-row justify-between cursor-pointer py-4 px-12"
+        className="flex cursor-pointer flex-row justify-between py-4 px-12"
         onClick={() => setIsOpened(!isOpened)}
       >
-        <h4 className="text-xl select-none">{title}</h4>
+        <h4 className="select-none text-xl">{title}</h4>
         {isOpened ? (
-          <ChevronUpIcon className="w-8 mx-4" />
+          <ChevronUpIcon className="mx-4 w-8" />
         ) : (
-          <ChevronDownIcon className="w-8 mx-4" />
+          <ChevronDownIcon className="mx-4 w-8" />
         )}
       </div>
 
       <div
         className={`${
           isOpened ? "show" : "hidden"
-        } mt-4 mb-10 mx-12 select-none transition-all duration-300 ease-in-out`}
+        } mx-12 mt-4 mb-10 select-none transition-all duration-300 ease-in-out`}
       >
         {children}
       </div>

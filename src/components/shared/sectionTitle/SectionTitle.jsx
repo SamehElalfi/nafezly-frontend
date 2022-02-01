@@ -1,7 +1,12 @@
-import React from 'react';
+import React from "react";
 
-function SectionTitle({children}) {
-  return <div className='text-2xl text-center my-12 md:my-24 select-none'> { children } </div>;
+function SectionTitle({ children }) {
+  return (
+    <div className="my-12 select-none text-center text-2xl md:my-24">
+      {" "}
+      {children}{" "}
+    </div>
+  );
 }
 
 export default SectionTitle;
