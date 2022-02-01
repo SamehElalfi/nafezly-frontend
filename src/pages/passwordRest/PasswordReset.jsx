@@ -1,3 +1,4 @@
+import FloatingButton from "components/layout/floatingButton/FloatingButton";
 import Footer from "components/layout/footer/Footer";
 import Navbar from "components/layout/navbar/Navbar";
 import Button from "components/shared/button/Button";
@@ -24,6 +25,7 @@ const PasswordRest = (props) => (
         </form>
       </div>
     </div>
+    <FloatingButton />
     <Footer />
   </>
 );

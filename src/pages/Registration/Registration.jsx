@@ -4,6 +4,7 @@ import Footer from "components/layout/footer/Footer";
 import SocialMediaLogin from "components/shared/socialMediaLogin/SocialMediaLogin";
 import Input from "components/shared/input/Input";
 import Button from "components/shared/button/Button";
+import FloatingButton from "components/layout/floatingButton/FloatingButton";
 
 function Register() {
   return (
@@ -63,6 +64,7 @@ const Registration = (props) => (
   <>
     <Navbar />
     <Register />
+    <FloatingButton />
     <Footer />
   </>
 );
