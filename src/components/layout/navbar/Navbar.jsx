@@ -44,7 +44,7 @@ function Navbar() {
   }, []);
 
   return (
-    <nav className="container mx-auto">
+    <nav className="container mx-auto min-h-[56px]">
       <div
         className="fixed top-0 left-0 right-0 z-10 flex flex-row items-center justify-around gap-1 bg-white shadow"
         ref={navBarRef}
