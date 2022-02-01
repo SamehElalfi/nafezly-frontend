@@ -19,6 +19,7 @@ function Header() {
           type="text"
           name="title"
           placeholder="أدخل عنوان المشروع الذي تريد تنفيذه..."
+          autoComplete="off"
           className="w-full rounded p-4 text-black outline-transparent focus:border-0"
           value={title}
           onChange={(e) => setTitle(e.target.value)}
