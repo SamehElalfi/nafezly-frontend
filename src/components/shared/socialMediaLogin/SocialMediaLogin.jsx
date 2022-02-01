@@ -1,9 +1,9 @@
 import React from "react";
 import { FaFacebookF, FaGoogle, FaTwitter } from "react-icons/fa";
 
-function SocialMediaLogin() {
+function SocialMediaLogin({className}) {
   return (
-    <div className="flex flex-col items-center justify-center">
+    <div className={`flex flex-col items-center justify-center ${className} `}>
       <span className="mb-4 text-lg">يمكنك التسجيل بإستخدام</span>
       <div className="flex flex-row items-center justify-center gap-8">
         <a href="https://" title="login with Facebook">
