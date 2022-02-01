@@ -10,7 +10,7 @@ function FloatingButton() {
     setClicked(!clicked);
   };
   return (
-    <div className="fixed bottom-1 right-1 flex flex-col-reverse">
+    <div className="fixed bottom-1 right-1 flex select-none flex-col-reverse">
       <div
         onClick={printx}
         className={` m-2 flex w-max cursor-pointer flex-row items-center gap-2 rounded bg-blue-500 p-2 text-white shadow-lg`}

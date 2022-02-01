@@ -71,11 +71,19 @@ function Navbar() {
           >
             تسجيل الدخول
           </a>
-          <IconButton onClick={() => setIsSidebarOpened(true)} icon={FaBars} iconWidth="w-6" className="mx-2" divStyle="gap-0 rounded" />
+          <IconButton
+            onClick={() => setIsSidebarOpened(true)}
+            icon={FaBars}
+            iconWidth="w-6"
+            className="mx-2"
+            divStyle="gap-0 rounded"
+          />
         </div>
       </div>
-      <Sidebar isSidebarOpened={isSidebarOpened} setIsSidebarOpened={setIsSidebarOpened}></Sidebar>
-
+      <Sidebar
+        isSidebarOpened={isSidebarOpened}
+        setIsSidebarOpened={setIsSidebarOpened}
+      ></Sidebar>
     </nav>
   );
 }
