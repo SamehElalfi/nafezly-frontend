@@ -3,7 +3,7 @@ import Button from "../button/Button";
 function Card(props) {
   return (
     <div className={`group flex h-48 flex-col  items-center ${props.className || ""} `}>
-      <props.icon className={`my-2 h-14 w-14 ${props.classNameIcon || ""}`} />
+      <props.icon className={`my-2 h-10 w-10 ${props.classNameIcon || ""}`} />
       <h2 className="my-2 text-xl font-bold">{props.title}</h2>
       <p className="duration-900 flex-wrap text-center transition-all group-hover:hidden ">
         {props.text}
