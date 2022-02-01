@@ -8,15 +8,19 @@ import Button from "components/shared/button/Button";
 function Register() {
   return (
     <div className="bg-gray-100 py-4">
-      <div className="container mx-auto my-12 flex w-full flex-col rounded bg-white p-12 md:w-[600px]">
+      <div className="container mx-auto my-12 flex w-full flex-col rounded bg-white p-12 md:max-w-screen-sm">
         <SocialMediaLogin />
         <hr className="m-16" />
 
         <form action="#">
           <div className="mb-8 font-medium">التسجيل</div>
-          <div className="flex flex-col sm:flex-row gap-8">
+          <div className="flex flex-col gap-8 sm:flex-row">
             <Input name="first name" label="الاسم الأول" className="sm:w-1/2" />
-            <Input name="last name" label="الاسم العائلة" className="sm:w-1/2" />
+            <Input
+              name="last name"
+              label="الاسم العائلة"
+              className="sm:w-1/2"
+            />
           </div>
           <Input
             name="email"
