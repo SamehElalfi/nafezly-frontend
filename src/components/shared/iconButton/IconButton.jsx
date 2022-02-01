@@ -2,7 +2,7 @@ import React from "react";
 
 function IconButton(props) {
   return (
-    <a href={props.link || "#"}>
+    <a href={props.link || "#"} onClick={props.onClick && props.onClick}>
       <div
         className={`m-2 flex flex-row items-center gap-2 p-2 hover:bg-gray-200 ${props.divStyle}`}
       >
