@@ -8,7 +8,7 @@ import Button from "components/shared/button/Button";
 function Register() {
   return (
     <div className="bg-gray-100 py-4">
-      <div className="container mx-auto my-12 flex w-full flex-col rounded bg-white p-12 md:w-[600px]">
+      <div className="container mx-auto my-12 flex flex-col rounded bg-white p-12 md:w-[600px]">
         <SocialMediaLogin />
         <hr className="m-16" />
 
