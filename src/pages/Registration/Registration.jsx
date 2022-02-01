@@ -8,15 +8,15 @@ import Button from "components/shared/button/Button";
 function Register() {
   return (
     <div className="bg-gray-100 py-4">
-      <div className="container mx-auto my-12 flex w-full flex-col rounded bg-white p-12 sm:w-96 md:w-[600px]">
+      <div className="container mx-auto my-12 flex w-full flex-col rounded bg-white p-12 md:w-[600px]">
         <SocialMediaLogin />
         <hr className="m-16" />
 
         <form action="#">
           <div className="mb-8 font-medium">التسجيل</div>
-          <div className="flex flex-row gap-8">
-            <Input name="first name" label="الاسم الأول" className="w-1/2" />
-            <Input name="last name" label="الاسم العائلة" className="w-1/2" />
+          <div className="flex flex-col sm:flex-row gap-8">
+            <Input name="first name" label="الاسم الأول" className="sm:w-1/2" />
+            <Input name="last name" label="الاسم العائلة" className="sm:w-1/2" />
           </div>
           <Input
             name="email"
@@ -36,7 +36,7 @@ function Register() {
             label="تأكيد كلمة المرور"
             className="my-12"
           />
-          <p>
+          <p className="mb-4">
             بتسجيلك في منصة نفذلي فإنك توافق علي{" "}
             <a href="https://" className="text-blue-500">
               شروط الاستخدام
