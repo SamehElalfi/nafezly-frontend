@@ -6,16 +6,14 @@ import { FaPaintBrush } from "react-icons/fa";
 import { BsFillChatLeftDotsFill } from "react-icons/bs";
 import { HiOutlineLightBulb } from "react-icons/hi";
 import { FaPenAlt } from "react-icons/fa";
-import {AiFillCreditCard} from "react-icons/ai"
+import { AiFillCreditCard } from "react-icons/ai";
 import SectionTitle from "components/shared/sectionTitle/SectionTitle";
 
 function Fields() {
   return (
-
     <div className="flex flex-col">
       <SectionTitle>مجالات الاختصاص</SectionTitle>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12 p-12">
-      
+      <div className="grid grid-cols-1 gap-12 p-12 sm:grid-cols-2 md:grid-cols-3">
         <Card
           icon={FaPaintBrush}
           name="تصميم و أعمال"

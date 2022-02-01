@@ -6,8 +6,7 @@ import WhyUs from "components/layout/whyUs/WhyUs";
 import Faq from "components/layout/faq/Faq";
 import StartNow from "components/layout/startNow/StartNow";
 import Footer from "components/layout/footer/Footer";
-import CopyRight from "components/layout/copyRight/CopyRight";
-import Sidebar from "components/layout/sidebar/Sidebar";
+import FloatingButton from "components/layout/floatingButton/FloatingButton";
 
 function Home() {
   return (
@@ -19,8 +18,7 @@ function Home() {
       <Faq></Faq>
       <StartNow></StartNow>
       <Footer></Footer>
-      <CopyRight></CopyRight>
-      {/* <Sidebar></Sidebar> */}
+      <FloatingButton> </FloatingButton>
     </div>
   );
 }
