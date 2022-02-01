@@ -1,5 +1,6 @@
-import React, { useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import IconButton from "../../shared/iconButton/IconButton";
+import Sidebar from "components/layout/sidebar/Sidebar";
 import logo from "assets/images/logo2-01.svg";
 
 // Navbar icons
@@ -11,6 +12,7 @@ import { FaBars } from "react-icons/fa";
 
 function Navbar() {
   const navBarRef = useRef(null);
+  const [isSidebarOpened, setIsSidebarOpened] = useState(false);
 
   // hide navbar when scroll down and show it again when scroll up
   useEffect(() => {
@@ -69,9 +71,11 @@ function Navbar() {
           >
             تسجيل الدخول
           </a>
-          <IconButton icon={FaBars} iconWidth="w-6" className="mx-2" />
+          <IconButton onClick={() => setIsSidebarOpened(true)} icon={FaBars} iconWidth="w-6" className="mx-2" divStyle="gap-0 rounded" />
         </div>
       </div>
+      <Sidebar isSidebarOpened={isSidebarOpened} setIsSidebarOpened={setIsSidebarOpened}></Sidebar>
+
     </nav>
   );
 }
