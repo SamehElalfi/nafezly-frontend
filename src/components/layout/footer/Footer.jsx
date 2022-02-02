@@ -15,7 +15,7 @@ import CopyRight from "../copyRight/CopyRight";
 
 function Footer() {
   return (
-    <div>
+    <div className="bg-white">
       <footer className="container mx-auto grid grid-cols-1 md:grid-cols-2">
         <div className="flex flex-col">
           <FooterComponent>
