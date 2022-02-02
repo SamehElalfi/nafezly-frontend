@@ -6,6 +6,10 @@ import Input from "components/shared/input/Input";
 import Button from "components/shared/button/Button";
 import FloatingButton from "components/layout/floatingButton/FloatingButton";
 
+/**
+ * It renders the register page.
+ * @returns The Register component.
+ */
 function Register() {
   return (
     <div className="bg-gray-100 py-4">
@@ -60,7 +64,7 @@ function Register() {
   );
 }
 
-const Registration = (props) => (
+const RegistrationPage = (props) => (
   <>
     <Navbar />
     <Register />
@@ -69,4 +73,4 @@ const Registration = (props) => (
   </>
 );
 
-export default Registration;
+export default RegistrationPage;

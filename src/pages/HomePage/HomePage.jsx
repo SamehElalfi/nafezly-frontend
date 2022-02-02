@@ -8,7 +8,7 @@ import StartNow from "components/layout/startNow/StartNow";
 import Footer from "components/layout/footer/Footer";
 import FloatingButton from "components/layout/floatingButton/FloatingButton";
 
-function Home() {
+function HomePage() {
   return (
     <div>
       <Navbar></Navbar>
@@ -23,4 +23,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default HomePage;

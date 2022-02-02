@@ -5,7 +5,7 @@ import Button from "components/shared/button/Button";
 import Input from "components/shared/input/Input";
 import React from "react";
 
-const PasswordRest = (props) => (
+const PasswordResetPage = (props) => (
   <>
     <Navbar />
     <div className="bg-gray-100 py-4">
@@ -30,4 +30,4 @@ const PasswordRest = (props) => (
   </>
 );
 
-export default PasswordRest;
+export default PasswordResetPage;
