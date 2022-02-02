@@ -1,4 +1,7 @@
 import React from "react";
+import Moment from 'react-moment';
+import 'moment/locale/ar';
+
 import statusBackground from "assets/js/statusBackground";
 
 // images
@@ -13,12 +16,12 @@ import { FaClock, FaAddressCard, FaMapMarkerAlt } from "react-icons/fa";
  * @returns The ProjectDetails component is returning a set of span elements that are being rendered as
  * a set of flex items.
  */
-function ProjectDetails({ project }) {
+function ProjectDetails({ project, className }) {
   return (
     <>
       <span className="project-created-at flex items-center justify-center text-xs">
         <FaClock className="mx-1 w-3" />
-        {project?.createdAt || "وقت غير محدد"}
+        <Moment fromNow ago unix locale="ar">{project?.createdAt || "وقت غير محدد"}</Moment>
       </span>
 
       <span className="project-proposals flex items-center justify-center text-xs">
@@ -26,7 +29,7 @@ function ProjectDetails({ project }) {
         {project?.proposalsCount || "0"} عروض
       </span>
 
-      <span className="project-location flex items-center justify-center text-xs">
+      <span className="project-location hidden sm:flex items-center justify-center text-xs">
         <FaMapMarkerAlt className="mx-1 w-3" />
         {project?.location || "مكان غير محدد"}
       </span>
@@ -45,7 +48,7 @@ function ProjectStatus({ status }) {
   return (
     <>
       <span
-        className={`project-status rounded py-1 px-2 text-xs text-white ${statusBackground(
+        className={`project-status rounded-sm py-1 px-2 text-xs text-white ${statusBackground(
           status
         )}`}
       >
@@ -79,7 +82,7 @@ function UserDetails({ user }) {
 function ProjectCard({ user, project, className }) {
   return (
     <div
-      className={`my-2 flex w-full flex-col rounded-lg bg-white p-4 first:mt-0 last:mb-0 ${
+      className={`my-2 flex w-full flex-col rounded-sm bg-white p-4 first:mt-0 last:mb-0 ${
         className || ""
       }`}
     >
@@ -89,8 +92,8 @@ function ProjectCard({ user, project, className }) {
       <p className="project-summary my-4 text-sm">
         {project?.summary || "لا يوجد وصف للمشروع"} ...
       </p>
-      <div className="project-details flex flex-row justify-between">
-        <div className="flex flex-row justify-around gap-3">
+      <div className="project-details flex flex-row justify-between items-center">
+        <div className="flex flex-col sm:flex-row justify-center items-start sm:items-center sm:justify-around gap-3">
           <UserDetails user={user} />
           <ProjectDetails project={project} />
         </div>
