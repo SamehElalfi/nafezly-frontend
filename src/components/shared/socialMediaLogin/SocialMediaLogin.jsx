@@ -1,7 +1,7 @@
 import React from "react";
 import { FaFacebookF, FaGoogle, FaTwitter } from "react-icons/fa";
 
-function SocialMediaLogin({className}) {
+function SocialMediaLogin({ className }) {
   return (
     <div className={`flex flex-col items-center justify-center ${className} `}>
       <span className="mb-4 text-lg">يمكنك التسجيل بإستخدام</span>
