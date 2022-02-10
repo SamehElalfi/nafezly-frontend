@@ -1,6 +1,4 @@
 import Filters from "components/layout/filters/Filters";
-import Footer from "components/layout/footer/Footer";
-import Navbar from "components/layout/navbar/Navbar";
 import Button from "components/shared/button/Button";
 import ProjectCard from "components/shared/projectCard/ProjectCard";
 import React from "react";
@@ -24,8 +22,7 @@ function ProjectsPage() {
 
   return (
     <>
-      <Navbar />
-      <div className="container mx-auto my-12 md:max-w-screen-xl px-4">
+      <div className="container mx-auto mt-24 mb-12 md:max-w-screen-xl px-4">
         <div className="mb-12 flex flex-col sm:flex-row justify-center gap-6 sm:gap-0 sm:justify-between items-center">
           <h1 className="text-xl sm:text-2xl font-base sm:font-medium">المشاريع المفتوحة</h1>
           <a href="https://">
@@ -46,7 +43,6 @@ function ProjectsPage() {
           </div>
         </div>
       </div>
-      <Footer />
     </>
   );
 }
