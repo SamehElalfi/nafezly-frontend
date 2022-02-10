@@ -1,6 +1,9 @@
 import React, { useState, useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
+
 import IconButton from "../../shared/iconButton/IconButton";
 import Sidebar from "components/layout/sidebar/Sidebar";
+
 import logo from "assets/images/logo2-01.svg";
 
 // Navbar icons
@@ -49,28 +52,28 @@ function Navbar() {
         className="fixed top-0 left-0 right-0 z-10 flex flex-row items-center justify-around gap-1 bg-white shadow"
         ref={navBarRef}
       >
-        <a href="https://" title="Home Page">
+        <Link to="/">
           <img src={logo} alt="Home Page" className="w-28" />
-        </a>
+        </Link>
         <div className="big-menu flex flex-row flex-nowrap items-center justify-end lg:justify-evenly">
           <div className="hidden lg:flex">
-            <IconButton icon={FaBoxes} iconWidth="w-6" name="الخدمات" />
-            <IconButton icon={FaRegImages} iconWidth="w-6" name="الاعمال" />
-            <IconButton icon={FaSuitcase} iconWidth="w-6" name="المشاريع" />
-            <IconButton icon={FaUsers} iconWidth="w-6" name="المنفذين" />
+            <Link to="/"><IconButton icon={FaBoxes} iconWidth="w-6" name="الخدمات" /></Link>
+            <Link to="/"><IconButton icon={FaRegImages} iconWidth="w-6" name="الاعمال" /></Link>
+            <Link to="/projects"><IconButton icon={FaSuitcase} iconWidth="w-6" name="المشاريع" /></Link>
+            <Link to="/"><IconButton icon={FaUsers} iconWidth="w-6" name="المنفذين" /></Link>
           </div>
-          <a
-            href="https://"
+          <Link
+            to="/login"
             className="whitespace-nowrap rounded border border-blue-500 py-2 px-3"
           >
             دخول
-          </a>
-          <a
-            href="https://"
+          </Link>
+          <Link
+            to="/registration"
             className="mx-2 hidden whitespace-nowrap rounded bg-blue-500 p-2 text-white lg:flex"
           >
-            تسجيل الدخول
-          </a>
+            حساب جديد
+          </Link>
           <IconButton
             onClick={() => setIsSidebarOpened(true)}
             icon={FaBars}
