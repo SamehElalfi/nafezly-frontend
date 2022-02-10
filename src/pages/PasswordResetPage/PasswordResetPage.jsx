@@ -1,13 +1,9 @@
-import FloatingButton from "components/layout/floatingButton/FloatingButton";
-import Footer from "components/layout/footer/Footer";
-import Navbar from "components/layout/navbar/Navbar";
 import Button from "components/shared/button/Button";
 import Input from "components/shared/input/Input";
 import React from "react";
 
 const PasswordResetPage = (props) => (
   <>
-    <Navbar />
     <div className="bg-gray-100 py-4">
       <div className="container mx-auto my-12 flex w-full flex-col rounded bg-white p-12 md:max-w-screen-sm">
         <form action="#">
@@ -25,8 +21,6 @@ const PasswordResetPage = (props) => (
         </form>
       </div>
     </div>
-    <FloatingButton />
-    <Footer />
   </>
 );
 

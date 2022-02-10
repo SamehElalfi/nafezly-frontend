@@ -1,6 +1,4 @@
 import React from "react";
-import Navbar from "components/layout/navbar/Navbar";
-import Footer from "components/layout/footer/Footer";
 import SocialMediaLogin from "components/shared/socialMediaLogin/SocialMediaLogin";
 import Input from "components/shared/input/Input";
 import Button from "components/shared/button/Button";
@@ -66,10 +64,8 @@ function Register() {
 
 const RegistrationPage = (props) => (
   <>
-    <Navbar />
     <Register />
     <FloatingButton />
-    <Footer />
   </>
 );
 
