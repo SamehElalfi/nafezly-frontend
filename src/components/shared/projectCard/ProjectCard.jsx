@@ -9,6 +9,7 @@ import defaultUserImage from "assets/images/user.png";
 
 // icons
 import { FaClock, FaAddressCard, FaMapMarkerAlt } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 /**
  * This function returns a React component that displays the project's createdAt, proposalsCount, and
@@ -87,7 +88,7 @@ function ProjectCard({ user, project, className }) {
       }`}
     >
       <div className="project-title text-lg font-medium text-blue-500">
-        {project?.title || "مشروع بدون عنوان"}
+        <Link to='/project/123'>{project?.title || "مشروع بدون عنوان"}</Link>
       </div>
       <p className="project-summary my-4 text-sm">
         {project?.summary || "لا يوجد وصف للمشروع"} ...
