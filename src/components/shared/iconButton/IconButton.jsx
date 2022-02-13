@@ -4,7 +4,7 @@ function IconButton(props) {
   return (
     <div onClick={props.onClick && props.onClick}>
       <div
-        className={`m-2 flex flex-row items-center gap-2 p-2 hover:bg-blue-300  ${props.divStyle || ""}`}
+        className={`m-2 flex flex-row items-center gap-2 p-2 hover:bg-gray-200 rounded  ${props.divStyle || ""}`}
       >
         <div>
           <props.icon className={`text-black w-4 ${props.classNameIcon || ""}`} />
