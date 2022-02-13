@@ -6,6 +6,7 @@ import PasswordResetPage from "pages/PasswordResetPage/PasswordResetPage";
 import ProjectPage from "pages/ProjectPage/ProjectPage";
 import ProjectsPage from "pages/ProjectsPage/ProjectsPage";
 import RegistrationPage from "pages/RegistrationPage/RegistrationPage";
+import NotFound from "pages/Errors/NotFound";
 import React from "react";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -26,7 +27,7 @@ function App() {
             <Route path="/password-reset" element={<PasswordResetPage />} />
           </Route>
           
-          <Route path="*" element={<h1 className="mt-96 text-2xl">not found 404</h1>}></Route>
+          <Route path="*" element={<NotFound />}></Route>
         </Routes>
         <Footer />
       </BrowserRouter>
